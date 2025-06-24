@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 class EnhancedAIVoiceProcessor:
     """Enhanced AI-powered voice command processor with 99%+ accuracy"""
     
-    def __init__(self, openai_api_key: str = None, Voxta_api_url: str = "http://localhost:5000/api"):
+    def __init__(self, openai_api_key: str = None, Voxta_api_url: str = "https://voxta-codeclash.onrender.com/api"):
         self.openai_api_key = openai_api_key or os.getenv("OPENAI_API_KEY")
         self.api_url = Voxta_api_url
         self.conversation_history = []
@@ -1104,7 +1104,7 @@ async def main():
     
     processor = EnhancedAIVoiceProcessor(
         openai_api_key=os.getenv("OPENAI_API_KEY"),
-        Voxta_api_url="http://localhost:5000/api"
+        Voxta_api_url="https://voxta-codeclash.onrender.com/api"
     )
     
     # Enhanced test commands with expected high accuracy

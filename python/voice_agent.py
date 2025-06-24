@@ -63,7 +63,7 @@ class AuctionItem:
 class EnhancedVoxtaVoiceAgent:
     """Enhanced voice agent with 99%+ accuracy and advanced features"""
     
-    def __init__(self, api_base_url: str = "http://localhost:5000/api"):
+    def __init__(self, api_base_url: str = "https://voxta-codeclash.onrender.com/api"):
         self.api_base_url = api_base_url
         self.is_listening = False
         self.current_auction = None

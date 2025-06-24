@@ -155,7 +155,7 @@ async def main():
     
     try:
         # Initialize the voice agent
-        api_url = os.getenv('API_BASE_URL', 'http://localhost:5000/api')
+        api_url = os.getenv('API_BASE_URL', 'https://voxta-codeclash.onrender.com/api')
         agent = EnhancedVoxtaVoiceAgent(api_url)
         
         # Start the enhanced listening loop

@@ -65,7 +65,7 @@ TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
 TWILIO_PHONE_NUMBER = os.getenv('TWILIO_PHONE_NUMBER')
 
 # Voxta API configuration
-API_BASE_URL = os.getenv('API_BASE_URL', 'http://localhost:5000/api')
+API_BASE_URL = os.getenv('API_BASE_URL', 'https://voxta-codeclash.onrender.com/api')
 
 # Initialize Twilio client
 if TWILIO_AVAILABLE and TWILIO_ACCOUNT_SID:

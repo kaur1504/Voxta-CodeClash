@@ -25,8 +25,8 @@ class TestEnhancedVoxtaVoiceAgent(unittest.TestCase):
     
     def setUp(self):
         """Set up enhanced test fixtures"""
-        self.agent = EnhancedVoxtaVoiceAgent("http://localhost:5000/api")
-        self.ai_processor = EnhancedAIVoiceProcessor(None, "http://localhost:5000/api")
+        self.agent = EnhancedVoxtaVoiceAgent("https://voxta-codeclash.onrender.com/api")
+        self.ai_processor = EnhancedAIVoiceProcessor(None, "https://voxta-codeclash.onrender.com/api")
     
     def test_enhanced_bid_extraction(self):
         """Test enhanced bid amount extraction with high accuracy"""
@@ -260,7 +260,7 @@ class TestAccuracyMetrics(unittest.TestCase):
     """Test accuracy metrics and performance"""
     
     def setUp(self):
-        self.ai_processor = EnhancedAIVoiceProcessor(None, "http://localhost:5000/api")
+        self.ai_processor = EnhancedAIVoiceProcessor(None, "https://voxta-codeclash.onrender.com/api")
     
     def test_accuracy_benchmark(self):
         """Test overall accuracy against benchmark commands"""
@@ -322,8 +322,8 @@ class TestErrorHandling(unittest.TestCase):
     """Test error handling and edge cases"""
     
     def setUp(self):
-        self.agent = EnhancedVoxtaVoiceAgent("http://localhost:5000/api")
-        self.ai_processor = EnhancedAIVoiceProcessor(None, "http://localhost:5000/api")
+        self.agent = EnhancedVoxtaVoiceAgent("https://voxta-codeclash.onrender.com/api")
+        self.ai_processor = EnhancedAIVoiceProcessor(None, "https://voxta-codeclash.onrender.com/api")
     
     @patch('requests.get')
     def test_network_error_handling(self, mock_get):

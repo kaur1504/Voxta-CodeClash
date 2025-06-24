@@ -26,7 +26,7 @@ export const AuctionProvider = ({ children }) => {
 
   const { socket } = useSocket()
 
-  const API_BASE = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000"
+  const API_BASE = process.env.REACT_APP_BACKEND_URL || "https://rahulchoudhary2005.pythonanywhere.com/"
 
   // Enhanced fetch auctions with better error handling and retry logic
   const fetchAuctions = useCallback(

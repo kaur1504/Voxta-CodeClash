@@ -17,7 +17,7 @@ export const SocketProvider = ({ children }) => {
   const [connectionError, setConnectionError] = useState(null)
 
   useEffect(() => {
-    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000"
+    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://rahulchoudhary2005.pythonanywhere.com/"
     
     const newSocket = io(BACKEND_URL, {
       transports: ["websocket", "polling"],
