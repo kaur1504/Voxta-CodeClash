@@ -1,0 +1,38 @@
+# Core dependencies for Voxta Voice AI System
+requests==2.31.0
+
+# Speech Recognition (optional - will fallback to text input if not available)
+SpeechRecognition==3.10.0
+
+# Text-to-Speech (optional - will fallback to text output if not available)
+pyttsx3==2.90
+
+# Audio processing (optional - only if you can install PyAudio)
+# PyAudio==0.2.11  # Uncomment if you can install it
+
+# Web framework for Twilio integration
+flask==3.0.0
+flask-cors==4.0.0
+
+# Environment variables
+python-dotenv==1.0.0
+
+# OpenAI integration (optional but recommended for best accuracy)
+openai==1.3.5
+
+# Twilio integration (optional - for phone-based bidding)
+twilio==8.10.0
+
+# Additional utilities
+asyncio==3.4.3
+dataclasses==0.8  # For Python < 3.7 compatibility
+typing-extensions==4.8.0
+
+# Development and testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+unittest-xml-reporting==3.2.0
+
+# Optional: Advanced audio processing
+# librosa==0.10.1  # Uncomment for advanced audio features
+# soundfile==0.12.1  # Uncomment for audio file support
