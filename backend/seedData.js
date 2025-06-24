@@ -25,6 +25,26 @@ const sampleProducts = [
     },
   },
   {
+    name: "Pen",
+    description: "Smooth writing Jiffy Gel Pen in vibrant red. Perfect for everyday use, school, or office. Features a comfortable grip and consistent ink flow.",
+    image: "https://www.rapiddeliveryservices.in/uploads/webp/jiffy_gel_pen_red_58189-.webp",
+    startingBid: 1,
+    currentBid: 1,
+    startTime: "2025-06-24T17:34:47.000Z",
+    endTime: "2025-06-25T17:34:47.000Z",
+    status: "active",
+    category: "Electronics",
+    condition: "New",
+    reservePrice: 3,
+    tags: ["pen", "gel pen", "red ink", "stationery"],
+    specifications: {
+      InkColor: "Red",
+      Type: "Gel Pen",
+      Brand: "Jiffy",
+      Quantity: "1"
+    },
+  },
+  {
     name: "MacBook Pro M2 13-inch",
     description:
       "13-inch MacBook Pro with M2 chip, 16GB unified memory, and 512GB SSD storage. Perfect for professionals and creatives.",
