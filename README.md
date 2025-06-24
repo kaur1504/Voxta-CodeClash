@@ -37,7 +37,6 @@ Online auctions move fast — bids change in seconds, and users often miss out d
 | Frontend              | React.js + Tailwind CSS                 |
 | Backend               | Node.js, Express.js, Python (NLU/STT)   |
 | Database              | MongoDB                                 |
-| Deployment            | Vercel                                  |
 
 ---
 
